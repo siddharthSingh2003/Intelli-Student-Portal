@@ -1,0 +1,143 @@
+{
+  "request": {
+    "question": "What is the minimum attendance required to appear for end-semester exams?",
+    "X-Student-Id": null
+  },
+  "response": {
+    "trace_id": "5cecddb34af6",
+    "answer": "A student must have a minimum attendance of 80% in each course to be permitted to appear in the end-semester examination.",
+    "answer_type": "retrieved_fact",
+    "citations": [
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "title": "Circular ACAD/2026/08: Revision of minimum attendance (sample)",
+        "section": "2",
+        "page": 1,
+        "version": "1",
+        "effective_from": "2026-08-01"
+      }
+    ],
+    "tools_invoked": [],
+    "applied_rules": [],
+    "conflicts_detected": [
+      {
+        "winner": "SAMPLE-CIRC-2026-08",
+        "overridden": [
+          "SAMPLE-ACAD-REG-2024#7.2"
+        ],
+        "step": "step 2: supersession",
+        "note": "SAMPLE-CIRC-2026-08 explicitly supersedes SAMPLE-ACAD-REG-2024#7.2"
+      },
+      {
+        "winner": "SAMPLE-CIRC-2026-08",
+        "overridden": [
+          "SAMPLE-FAQ-2026#1"
+        ],
+        "step": "step 3: authority",
+        "note": "SAMPLE-FAQ-2026 disagrees and is overridden"
+      }
+    ],
+    "explanation": "Taken from Circular ACAD/2026/08: Revision of minimum attendance (sample), section 2 (version 1, effective 2026-08-01). Precedence applied: SAMPLE-CIRC-2026-08 over SAMPLE-ACAD-REG-2024#7.2 (step 2: supersession); SAMPLE-CIRC-2026-08 over SAMPLE-FAQ-2026#1 (step 3: authority).",
+    "assumptions": [],
+    "upcoming_changes": [],
+    "as_of_date": "2026-10-06"
+  },
+  "audit": {
+    "trace_id": "5cecddb34af6",
+    "timestamp": "2026-10-06T08:23:37+00:00",
+    "student_id": null,
+    "question_category": "policy_fact",
+    "as_of_date": "2026-10-06",
+    "sources_retrieved": [
+      {
+        "doc_id": "SAMPLE-FAQ-2026",
+        "section": "1",
+        "chunk_id": "SAMPLE-FAQ-2026::0001",
+        "score": 0.59
+      },
+      {
+        "doc_id": "SAMPLE-ACAD-REG-2024",
+        "section": "7.2",
+        "chunk_id": "SAMPLE-ACAD-REG-2024::0003",
+        "score": 0.485
+      },
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "section": "2",
+        "chunk_id": "SAMPLE-CIRC-2026-08::0002",
+        "score": 0.442
+      },
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "section": "0",
+        "chunk_id": "SAMPLE-CIRC-2026-08::0000",
+        "score": 0.208
+      },
+      {
+        "doc_id": "SAMPLE-FORUM-2026",
+        "section": "1",
+        "chunk_id": "SAMPLE-FORUM-2026::0001",
+        "score": 0.197
+      },
+      {
+        "doc_id": "SAMPLE-ACAD-REG-2024",
+        "section": "8.3",
+        "chunk_id": "SAMPLE-ACAD-REG-2024::0008",
+        "score": 0.177
+      },
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "section": "1",
+        "chunk_id": "SAMPLE-CIRC-2026-08::0001",
+        "score": 0.0
+      }
+    ],
+    "precedence_decision": [
+      "SAMPLE-CIRC-2026-08 supersedes SAMPLE-ACAD-REG-2024#7.2 (step 2)"
+    ],
+    "conflicts_detected": [
+      {
+        "winner": "SAMPLE-CIRC-2026-08",
+        "overridden": [
+          "SAMPLE-ACAD-REG-2024#7.2"
+        ],
+        "step": "step 2: supersession",
+        "note": "SAMPLE-CIRC-2026-08 explicitly supersedes SAMPLE-ACAD-REG-2024#7.2"
+      },
+      {
+        "winner": "SAMPLE-CIRC-2026-08",
+        "overridden": [
+          "SAMPLE-FAQ-2026#1"
+        ],
+        "step": "step 3: authority",
+        "note": "SAMPLE-FAQ-2026 disagrees and is overridden"
+      }
+    ],
+    "tools_invoked": [],
+    "rules_applied": [],
+    "answer_type": "retrieved_fact",
+    "citations": [
+      "SAMPLE-CIRC-2026-08#2"
+    ],
+    "injection_flags": [
+      {
+        "chunk_id": "SAMPLE-FORUM-2026::0001",
+        "doc_id": "SAMPLE-FORUM-2026",
+        "pattern": "ignore (all |any )?(the )?(previous|prior|above|earlier) (instructions|rules)"
+      },
+      {
+        "chunk_id": "SAMPLE-FORUM-2026::0001",
+        "doc_id": "SAMPLE-FORUM-2026",
+        "pattern": "\\byou are now\\b"
+      }
+    ],
+    "notes": [
+      "2 instruction-like sentence(s) removed from documents"
+    ],
+    "model": "mock",
+    "llm_calls": 0,
+    "tokens": 0,
+    "retrieval_config": "hash/section/900/k6",
+    "latency_ms": 10
+  }
+}

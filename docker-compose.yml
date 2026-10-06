@@ -1,0 +1,30 @@
+# `docker compose up` starts the API and the UI. The stores (ChromaDB persistent
+# client + SQLite) are embedded in the API process and persisted to ./storage, so
+# no separate database container is needed. Ollama runs on the host.
+services:
+  api:
+    build: .
+    env_file: .env
+    environment:
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports: ["8000:8000"]
+    volumes:
+      - ./storage:/app/storage
+      - ./docs:/app/docs
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+  ui:
+    build: .
+    command: streamlit run ui/streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+    environment:
+      API_URL: http://api:8000
+    ports: ["8501:8501"]
+    depends_on:
+      api:
+        condition: service_healthy
