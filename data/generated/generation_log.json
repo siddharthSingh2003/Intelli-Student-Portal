@@ -1,0 +1,22 @@
+{
+  "generator": "mock-deterministic (MOCK_LLM=true)",
+  "temperature": null,
+  "seed": 42,
+  "calls": 0,
+  "retries": 0,
+  "tokens": 0,
+  "prompts": [],
+  "corrections": [],
+  "generated_at": "2026-10-06T09:16:18.119165+00:00",
+  "credentials": "plain-text initial password 'Pass@{student_id}'",
+  "validation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "counts": {
+    "students": 40,
+    "courses": 6,
+    "attendance": 120,
+    "results": 120
+  }
+}

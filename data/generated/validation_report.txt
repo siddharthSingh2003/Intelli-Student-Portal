@@ -1,0 +1,5 @@
+VALIDATION REPORT
+rows: {'students': 40, 'courses': 6, 'attendance': 120, 'results': 120}
+errors: 0  warnings: 0
+
+All checks passed.

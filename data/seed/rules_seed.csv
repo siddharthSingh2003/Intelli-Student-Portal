@@ -1,0 +1,7 @@
+rule_id,description,parameter,operator,value,scope_programmes,scope_batches,effective_from,effective_to,source_doc_id,source_section
+ATT-MIN@SYN-ACAD-ATT-2026#3.1-A,"Minimum attendance % per course to appear in the end-semester exam (Table 1, category A: B.Tech, batch 2025 and later)",min_attendance_pct,>=,80,B.Tech,2025+,2026-10-01,,SYN-ACAD-ATT-2026,3.1
+ATT-MIN@SYN-ACAD-ATT-2026#3.1-B,"Minimum attendance % per course to appear in the end-semester exam (Table 1, category B: B.Tech, batch 2024 and earlier)",min_attendance_pct,>=,75,B.Tech,1990-2024,2026-10-01,,SYN-ACAD-ATT-2026,3.1
+ATT-MIN@SYN-ACAD-ATT-2026#3.1-C,"Minimum attendance % per course to appear in the end-semester exam (Table 1, category C: M.Tech, all batches)",min_attendance_pct,>=,75,M.Tech,ALL,2026-10-01,,SYN-ACAD-ATT-2026,3.1
+PLC-CGPA@SYN-COE-EXAM-2026#10.2-BTECH,"Minimum CGPA for academic eligibility for campus placement and internship (Table 6, B.Tech)",placement_min_cgpa,>=,6.00,B.Tech,ALL,2026-10-01,,SYN-COE-EXAM-2026,10.2
+PLC-CGPA@SYN-COE-EXAM-2026#10.2-MTECH,"Minimum CGPA for academic eligibility for campus placement and internship (Table 6, M.Tech)",placement_min_cgpa,>=,6.50,M.Tech,ALL,2026-10-01,,SYN-COE-EXAM-2026,10.2
+PLC-BKLG@SYN-COE-EXAM-2026#10.2,"Maximum active backlogs for full-time campus placement (Table 6: none; an internship allows not more than one, which is not modelled)",placement_max_backlogs,<=,0,B.Tech;M.Tech,ALL,2026-10-01,,SYN-COE-EXAM-2026,10.2

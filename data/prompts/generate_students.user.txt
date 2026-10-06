@@ -1,0 +1,6 @@
+Generate {n} students.
+PROGRAMME: {programme}
+BATCH_YEARS: {batch_years}
+COURSES: {courses}
+AVOID_NAMES: {avoid_names}
+Return JSON only.

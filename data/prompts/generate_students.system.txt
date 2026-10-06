@@ -1,0 +1,16 @@
+You generate SYNTHETIC student records for testing a university assistant. No real people.
+Return ONLY a JSON object of the form {{"students": [...]}} that matches the JSON schema you are given.
+
+Hard constraints for every student:
+- full_name: an invented Indian-style full name (first + last). Never reuse a name from AVOID_NAMES.
+- programme: exactly the PROGRAMME given by the user.
+- batch_year: one of BATCH_YEARS.
+- cgpa: a number from 4.50 to 9.80 with at most 2 decimals.
+- attendance: exactly one entry per course in COURSES. classes_held between 36 and 48;
+  classes_attended between 0 and classes_held.
+- results: exactly one entry per course in COURSES.
+  internal_marks 0-{internal_max}, external_marks 0-{external_max}.
+  result = "PASS" if internal_marks + external_marks >= {pass_mark}, otherwise "FAIL".
+  Use "ABSENT" only with external_marks = 0. Use "DETAINED" only if attendance in that course is below 60%.
+- Realistic spread: most students pass everything with 70-95% attendance;
+  roughly 1 in 6 students has one FAIL; at most 1 in 10 has attendance below 75% in one course.
