@@ -1,0 +1,9 @@
+doc_id,title,issuer,authority_level,doc_type,version,effective_from,effective_to,supersedes,scope_programmes,scope_batches,provenance,retrieved_on,synthetic,file_path
+SAMPLE-ACAD-REG-2024,Academic Regulations for B.Tech (sample),Office of the Dean (Academics),1,regulation,3.1,2024-07-01,,,B.Tech,ALL,sample corpus for development,2026-10-06,Y,acad_reg.txt
+SAMPLE-CIRC-2026-08,Circular ACAD/2026/08: Revision of minimum attendance (sample),Office of the Dean (Academics),2,circular,1,2026-08-01,,SAMPLE-ACAD-REG-2024#7.2,B.Tech,ALL,sample corpus for development,2026-10-06,Y,circular_attendance.txt
+SAMPLE-FAQ-2026,Student Help-desk FAQ (sample),Student Help Desk,4,faq,1,2026-09-15,,,ALL,ALL,sample corpus for development,2026-10-06,Y,helpdesk_faq.txt
+SAMPLE-FORUM-2026,Student Council forum post (sample),Student Council,5,unofficial,1,2026-09-20,,,ALL,ALL,sample corpus for development,2026-10-06,Y,council_forum.txt
+SAMPLE-PLACE-2025,Training and Placement Policy 2025 (sample),Training and Placement Cell,2,circular,2025,2025-07-01,,,B.Tech,2023+,sample corpus for development,2026-10-06,Y,placement_2025.txt
+SAMPLE-PLACE-2026,Training and Placement Policy 2026 (sample),Training and Placement Cell,2,circular,2026,2026-12-01,,SAMPLE-PLACE-2025,B.Tech,2023+,sample corpus for development,2026-10-06,Y,placement_2026.txt
+SAMPLE-HOSTEL-A,Hostel notice: curfew (Boys Hostel Office) (sample),Boys Hostel Office,3,notice,1,2026-09-01,,,ALL,ALL,sample corpus for development,2026-10-06,Y,hostel_notice_a.txt
+SAMPLE-HOSTEL-B,Hostel notice: curfew (Chief Warden Office) (sample),Chief Warden Office,3,notice,1,2026-09-01,,,ALL,ALL,sample corpus for development,2026-10-06,Y,hostel_notice_b.txt
