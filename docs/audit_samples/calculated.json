@@ -1,0 +1,196 @@
+{
+  "request": {
+    "question": "Am I eligible to appear in the end-semester exam for Data Structures?",
+    "X-Student-Id": "S1004"
+  },
+  "response": {
+    "trace_id": "54af69711bcb",
+    "answer": "You are not eligible to appear in the end-semester exam for CS201: your attendance is 77.5%, below the required 80%. Attending the next 5 classes without absence would bring you to 80%.",
+    "answer_type": "calculated",
+    "citations": [
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "title": "Circular ACAD/2026/08: Revision of minimum attendance (sample)",
+        "section": "2",
+        "page": 1,
+        "version": "1",
+        "effective_from": "2026-08-01"
+      }
+    ],
+    "tools_invoked": [
+      {
+        "tool": "check_exam_eligibility",
+        "input": {
+          "course_code": "CS201"
+        },
+        "output": {
+          "result": "NOT_ELIGIBLE",
+          "rule_id": "ATT-MIN@SAMPLE-CIRC-2026-08#2",
+          "course_code": "CS201",
+          "course_name": "Data Structures",
+          "classes_held": 40,
+          "classes_attended": 31,
+          "attendance_pct": 77.5,
+          "required_pct": 80.0,
+          "classes_needed": 5
+        },
+        "status": "ok",
+        "ms": 2.03
+      }
+    ],
+    "applied_rules": [
+      {
+        "rule_id": "ATT-MIN@SAMPLE-CIRC-2026-08#2",
+        "value": ">=80",
+        "source_doc_id": "SAMPLE-CIRC-2026-08",
+        "source_section": "2",
+        "parameter": "min_attendance_pct"
+      }
+    ],
+    "conflicts_detected": [
+      {
+        "winner": "SAMPLE-CIRC-2026-08",
+        "overridden": [
+          "SAMPLE-ACAD-REG-2024#7.2"
+        ],
+        "step": "step 2: supersession",
+        "note": "SAMPLE-CIRC-2026-08 explicitly supersedes SAMPLE-ACAD-REG-2024#7.2"
+      },
+      {
+        "winner": "ATT-MIN@SAMPLE-CIRC-2026-08#2",
+        "overridden": [
+          "ATT-MIN@SAMPLE-FAQ-2026#1"
+        ],
+        "step": "step 3: authority",
+        "note": "SAMPLE-CIRC-2026-08 prevails over SAMPLE-FAQ-2026"
+      }
+    ],
+    "explanation": "Rule ATT-MIN@SAMPLE-CIRC-2026-08#2 (Circular ACAD/2026/08: Revision of minimum attendance (sample), section 2) requires min_attendance_pct >=80. The decision was computed by code from your records; it was not estimated by the language model.",
+    "assumptions": [
+      "Interpreted the course as CS201 (Data Structures)."
+    ],
+    "upcoming_changes": [],
+    "as_of_date": "2026-10-06"
+  },
+  "audit": {
+    "trace_id": "54af69711bcb",
+    "timestamp": "2026-10-06T08:23:37+00:00",
+    "student_id": "S1004",
+    "question_category": "personal_eligibility",
+    "as_of_date": "2026-10-06",
+    "sources_retrieved": [
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "section": "2",
+        "chunk_id": "SAMPLE-CIRC-2026-08::0002",
+        "score": 0.283
+      },
+      {
+        "doc_id": "SAMPLE-ACAD-REG-2024",
+        "section": "8.4",
+        "chunk_id": "SAMPLE-ACAD-REG-2024::0009",
+        "score": 0.262
+      },
+      {
+        "doc_id": "SAMPLE-FAQ-2026",
+        "section": "1",
+        "chunk_id": "SAMPLE-FAQ-2026::0001",
+        "score": 0.236
+      },
+      {
+        "doc_id": "SAMPLE-ACAD-REG-2024",
+        "section": "7.2",
+        "chunk_id": "SAMPLE-ACAD-REG-2024::0003",
+        "score": 0.222
+      },
+      {
+        "doc_id": "SAMPLE-ACAD-REG-2024",
+        "section": "8.3",
+        "chunk_id": "SAMPLE-ACAD-REG-2024::0008",
+        "score": 0.189
+      },
+      {
+        "doc_id": "SAMPLE-ACAD-REG-2024",
+        "section": "8.1",
+        "chunk_id": "SAMPLE-ACAD-REG-2024::0006",
+        "score": 0.158
+      },
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "section": "3",
+        "chunk_id": "SAMPLE-CIRC-2026-08::0003",
+        "score": 0.114
+      },
+      {
+        "doc_id": "SAMPLE-CIRC-2026-08",
+        "section": "1",
+        "chunk_id": "SAMPLE-CIRC-2026-08::0001",
+        "score": 0.0
+      }
+    ],
+    "precedence_decision": [
+      "SAMPLE-CIRC-2026-08 supersedes SAMPLE-ACAD-REG-2024#7.2 (step 2)"
+    ],
+    "conflicts_detected": [
+      {
+        "winner": "SAMPLE-CIRC-2026-08",
+        "overridden": [
+          "SAMPLE-ACAD-REG-2024#7.2"
+        ],
+        "step": "step 2: supersession",
+        "note": "SAMPLE-CIRC-2026-08 explicitly supersedes SAMPLE-ACAD-REG-2024#7.2"
+      },
+      {
+        "winner": "ATT-MIN@SAMPLE-CIRC-2026-08#2",
+        "overridden": [
+          "ATT-MIN@SAMPLE-FAQ-2026#1"
+        ],
+        "step": "step 3: authority",
+        "note": "SAMPLE-CIRC-2026-08 prevails over SAMPLE-FAQ-2026"
+      }
+    ],
+    "tools_invoked": [
+      {
+        "tool": "check_exam_eligibility",
+        "input": {
+          "course_code": "CS201"
+        },
+        "output": {
+          "result": "NOT_ELIGIBLE",
+          "rule_id": "ATT-MIN@SAMPLE-CIRC-2026-08#2",
+          "course_code": "CS201",
+          "course_name": "Data Structures",
+          "classes_held": 40,
+          "classes_attended": 31,
+          "attendance_pct": 77.5,
+          "required_pct": 80.0,
+          "classes_needed": 5
+        },
+        "status": "ok",
+        "ms": 2.03
+      }
+    ],
+    "rules_applied": [
+      {
+        "rule_id": "ATT-MIN@SAMPLE-CIRC-2026-08#2",
+        "value": ">=80",
+        "source_doc_id": "SAMPLE-CIRC-2026-08",
+        "source_section": "2",
+        "parameter": "min_attendance_pct"
+      }
+    ],
+    "answer_type": "calculated",
+    "citations": [
+      "SAMPLE-CIRC-2026-08#2"
+    ],
+    "injection_flags": [],
+    "notes": [
+      "planner=llm"
+    ],
+    "model": "mock",
+    "llm_calls": 0,
+    "tokens": 0,
+    "retrieval_config": "hash/section/900/k6",
+    "latency_ms": 107
+  }
+}

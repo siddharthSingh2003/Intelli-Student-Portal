@@ -1,0 +1,119 @@
+{
+  "request": {
+    "question": "What time does the hostel curfew start?",
+    "X-Student-Id": null
+  },
+  "response": {
+    "trace_id": "defd9ea1fcbe",
+    "answer": "The authorised sources conflict on this and the precedence policy cannot resolve it: Hostel notice: curfew (Boys Hostel Office) (sample) (section 1) and Hostel notice: curfew (Chief Warden Office) (sample) (section 1) give different answers, with the same authority level and effective date. Please contact the issuing office (Boys Hostel Office; Chief Warden Office).",
+    "answer_type": "conflict_flagged",
+    "citations": [
+      {
+        "doc_id": "SAMPLE-HOSTEL-A",
+        "title": "Hostel notice: curfew (Boys Hostel Office) (sample)",
+        "section": "1",
+        "page": 1,
+        "version": "1",
+        "effective_from": "2026-09-01"
+      },
+      {
+        "doc_id": "SAMPLE-HOSTEL-B",
+        "title": "Hostel notice: curfew (Chief Warden Office) (sample)",
+        "section": "1",
+        "page": 1,
+        "version": "1",
+        "effective_from": "2026-09-01"
+      }
+    ],
+    "tools_invoked": [],
+    "applied_rules": [],
+    "conflicts_detected": [
+      {
+        "winner": null,
+        "overridden": [
+          "SAMPLE-HOSTEL-A#1",
+          "SAMPLE-HOSTEL-B#1"
+        ],
+        "step": "step 5: unresolved",
+        "note": "contact the issuing office"
+      }
+    ],
+    "explanation": "Precedence applied: unresolved over SAMPLE-HOSTEL-A#1, SAMPLE-HOSTEL-B#1 (step 5: unresolved).",
+    "assumptions": [],
+    "upcoming_changes": [
+      "Training and Placement Policy 2026 (sample) (SAMPLE-PLACE-2026) takes effect on 2026-12-01."
+    ],
+    "as_of_date": "2026-10-06"
+  },
+  "audit": {
+    "trace_id": "defd9ea1fcbe",
+    "timestamp": "2026-10-06T08:23:37+00:00",
+    "student_id": null,
+    "question_category": "policy_fact",
+    "as_of_date": "2026-10-06",
+    "sources_retrieved": [
+      {
+        "doc_id": "SAMPLE-HOSTEL-A",
+        "section": "1",
+        "chunk_id": "SAMPLE-HOSTEL-A::0001",
+        "score": 0.408
+      },
+      {
+        "doc_id": "SAMPLE-HOSTEL-B",
+        "section": "1",
+        "chunk_id": "SAMPLE-HOSTEL-B::0001",
+        "score": 0.408
+      },
+      {
+        "doc_id": "SAMPLE-HOSTEL-A",
+        "section": "0",
+        "chunk_id": "SAMPLE-HOSTEL-A::0000",
+        "score": 0.306
+      },
+      {
+        "doc_id": "SAMPLE-HOSTEL-B",
+        "section": "0",
+        "chunk_id": "SAMPLE-HOSTEL-B::0000",
+        "score": 0.236
+      },
+      {
+        "doc_id": "SAMPLE-PLACE-2025",
+        "section": "2",
+        "chunk_id": "SAMPLE-PLACE-2025::0002",
+        "score": 0.105
+      },
+      {
+        "doc_id": "SAMPLE-PLACE-2026",
+        "section": "2",
+        "chunk_id": "SAMPLE-PLACE-2026::0002",
+        "score": 0.105
+      }
+    ],
+    "precedence_decision": [],
+    "conflicts_detected": [
+      {
+        "winner": null,
+        "overridden": [
+          "SAMPLE-HOSTEL-A#1",
+          "SAMPLE-HOSTEL-B#1"
+        ],
+        "step": "step 5: unresolved",
+        "note": "contact the issuing office"
+      }
+    ],
+    "tools_invoked": [],
+    "rules_applied": [],
+    "answer_type": "conflict_flagged",
+    "citations": [
+      "SAMPLE-HOSTEL-A#1",
+      "SAMPLE-HOSTEL-B#1"
+    ],
+    "injection_flags": [],
+    "notes": [],
+    "model": "mock",
+    "llm_calls": 0,
+    "tokens": 0,
+    "retrieval_config": "hash/section/900/k6",
+    "latency_ms": 6
+  }
+}

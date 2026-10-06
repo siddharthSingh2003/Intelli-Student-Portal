@@ -1,0 +1,40 @@
+{
+  "request": {
+    "question": "What is the attendance of S1002 in Data Structures?",
+    "X-Student-Id": "S1001"
+  },
+  "response": {
+    "trace_id": "2a40566b3f8c",
+    "answer": "I can't share another student's records. I can only answer questions about the logged-in student's own data.",
+    "answer_type": "refused",
+    "citations": [],
+    "tools_invoked": [],
+    "applied_rules": [],
+    "conflicts_detected": [],
+    "explanation": "Refused by the authorisation check (other_student_data).",
+    "assumptions": [],
+    "upcoming_changes": [],
+    "as_of_date": "2026-10-06"
+  },
+  "audit": {
+    "trace_id": "2a40566b3f8c",
+    "timestamp": "2026-10-06T08:23:37+00:00",
+    "student_id": "S1001",
+    "question_category": "unauthorised",
+    "as_of_date": "2026-10-06",
+    "sources_retrieved": [],
+    "precedence_decision": [],
+    "conflicts_detected": [],
+    "tools_invoked": [],
+    "rules_applied": [],
+    "answer_type": "refused",
+    "citations": [],
+    "injection_flags": [],
+    "notes": [],
+    "model": "mock",
+    "llm_calls": 0,
+    "tokens": 0,
+    "retrieval_config": "hash/section/900/k6",
+    "latency_ms": 2
+  }
+}

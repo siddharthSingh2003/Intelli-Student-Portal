@@ -1,0 +1,43 @@
+# Replace @member-N with GitHub usernames. PRs touching these paths need that member's review.
+# Later lines override earlier ones.
+/shared/schemas.py        @member-1 @member-2 @member-3 @member-4
+/shared/config.py         @member-4
+/shared/llm.py            @member-4
+/shared/security.py       @member-3
+
+# Member 1: RAG pipeline
+/ingestion/               @member-1
+/docs/                    @member-1
+/tests/test_ingestion.py  @member-1
+/tests/test_precedence.py @member-1
+/ROLE_1_RAG_PIPELINE.md   @member-1
+
+# Member 2: data and tools
+/data/                    @member-2
+/tools/                   @member-2
+/scripts/load_students.py @member-2
+/DATA_CARD.md             @member-2
+/tests/test_tools.py      @member-2
+/ROLE_2_DATA_AND_TOOLS.md @member-2
+
+# Member 3: LangGraph orchestration and FastAPI
+/graph/                   @member-3
+/api/                     @member-3
+/tests/test_graph.py      @member-3
+/tests/test_api.py        @member-3
+/ROLE_3_LANGGRAPH_AND_FASTAPI.md @member-3
+
+# Member 4: platform, UI and evaluation
+/ui/                      @member-4
+/eval/                    @member-4
+/docs/audit_samples/      @member-4
+/scripts/seed_all.py      @member-4
+/scripts/export_audit_samples.py @member-4
+/tests/conftest.py        @member-4
+/Dockerfile               @member-4
+/docker-compose.yml       @member-4
+/requirements.txt         @member-4
+/requirements-core.txt    @member-4
+/.github/                 @member-4
+/README.md                @member-4
+/ROLE_4_PLATFORM_UI_AND_EVALUATION.md @member-4
